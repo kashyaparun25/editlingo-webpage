@@ -68,8 +68,6 @@
   --card-shadow-hover: 0 12px 40px rgba(0, 74, 173, .08);
   --nav-bg: rgba(250, 248, 245, .88);
   --nav-shadow: 0 1px 20px rgba(0, 0, 0, .06);
-  --logo-filter: brightness(0) saturate(100%) invert(18%) sepia(96%) saturate(2654%) hue-rotate(209deg) brightness(92%) contrast(107%);
-  --logo-filter-footer: brightness(0) invert(1);
   --grain-opacity: .035;
   --tag-live-bg: rgba(34, 170, 85, .1);
   --tag-live-color: #1a8a4a;
@@ -116,8 +114,6 @@
   --card-shadow-hover: 0 12px 40px rgba(59, 130, 246, .12);
   --nav-bg: rgba(15, 17, 23, .92);
   --nav-shadow: 0 1px 20px rgba(0, 0, 0, .3);
-  --logo-filter: brightness(0) saturate(100%) invert(100%);
-  --logo-filter-footer: brightness(0) invert(1);
   --grain-opacity: .02;
   --tag-live-bg: rgba(34, 170, 85, .15);
   --tag-live-color: #4ADE80;
@@ -264,15 +260,17 @@ body::after {
 .nav-logo-link img {
   height: 150px;
   width: auto;
-  transition: height .45s var(--ease), filter .4s var(--ease);
-  filter: var(--logo-filter);
+  transition: height .45s var(--ease);
 }
 .nav.scrolled .nav-logo-link img {
   height: 50px;
 }
-/* Footer logo gets its own filter */
+[data-theme="dark"] .nav-logo-link img {
+  filter: brightness(0) invert(1);
+}
+/* Footer logo — white */
 .footer-logo-link img {
-  filter: var(--logo-filter-footer) !important;
+  filter: brightness(0) invert(1) !important;
 }
 .nav-links {
   display: flex;
