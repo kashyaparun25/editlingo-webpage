@@ -1,0 +1,18 @@
+# EditLingo Solutions
+
+> Intellectual depth. Exceptional craft. Multi-agent experiences that make ideas memorable.
+
+EditLingo Solutions is a software company that builds AI-powered multi-agent products. We transform complex ideas into polished, intelligent software experiences.
+
+## Products
+
+- HistOracle: An AI-powered historical exploration platform that brings history to life through multi-agent conversations. Users can interact with historically accurate AI personas, explore events, and gain deep insights into the past.
+
+## Contact
+
+- Website: https://editlingo.com
+- Email: support@editlingo.com
+
+## Links
+
+- Homepage: https://editlingo.com

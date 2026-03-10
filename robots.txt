@@ -1,0 +1,5 @@
+# EditLingo Solutions — editlingo.com
+User-agent: *
+Allow: /
+
+Sitemap: https://editlingo.com/sitemap.xml
