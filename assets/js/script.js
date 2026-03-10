@@ -13,8 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (stored) {
     html.setAttribute('data-theme', stored);
-  } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    html.setAttribute('data-theme', 'dark');
   }
 
   themeToggle.addEventListener('click', () => {
@@ -22,13 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const next = current === 'light' ? 'dark' : 'light';
     html.setAttribute('data-theme', next);
     localStorage.setItem('editlingo-theme', next);
-  });
-
-  // Listen for OS-level changes
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-    if (!localStorage.getItem('editlingo-theme')) {
-      html.setAttribute('data-theme', e.matches ? 'dark' : 'light');
-    }
   });
 
   // ── Navbar scroll effect ──
