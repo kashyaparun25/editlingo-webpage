@@ -265,8 +265,9 @@ body::after {
 .nav.scrolled .nav-logo-link img {
   height: 50px;
 }
+/* Dark mode logo: shift #004AAD to match dark mode --cobalt (#3B82F6) */
 [data-theme="dark"] .nav-logo-link img {
-  filter: brightness(0) invert(1);
+  filter: brightness(0) saturate(100%) invert(40%) sepia(52%) saturate(5765%) hue-rotate(213deg) brightness(99%) contrast(94%);
 }
 /* Footer logo — white */
 .footer-logo-link img {
