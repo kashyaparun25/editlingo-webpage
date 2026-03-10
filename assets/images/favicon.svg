@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Rounded square background -->
+  <rect width="512" height="512" rx="108" ry="108" fill="#1A1A2E"/>
+  
+  <!-- Letter E - geometric, bold, clean -->
+  <!-- Built from rectangles for pixel-perfect geometry -->
+  
+  <!-- Vertical spine -->
+  <rect x="132" y="112" width="52" height="288" rx="4" fill="white"/>
+  
+  <!-- Top arm -->
+  <rect x="132" y="112" width="228" height="48" rx="4" fill="white"/>
+  
+  <!-- Middle arm (slightly shorter for proper E proportions) -->
+  <rect x="132" y="232" width="188" height="48" rx="4" fill="white"/>
+  
+  <!-- Bottom arm -->
+  <rect x="132" y="352" width="228" height="48" rx="4" fill="white"/>
+</svg>
